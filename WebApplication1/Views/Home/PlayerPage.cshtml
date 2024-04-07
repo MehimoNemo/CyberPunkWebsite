@@ -4,35 +4,49 @@
 }
 
 
-
 <div id="ppChar">
-    <img id="ppCharImg"  src="../images/gurps.jpg"/>
+    <img id="ppCharImg" src="../images/gurps.jpg"/>
     <div id="ppCharSelectCon">
         <div class=shadeCaster>
-            <select name="char" id="ppCharSelect" class="coolbtn"  text="Change Value">
-                <option value="char1">Change Value</option>
-                <option value="char2">Char 2</option>
-                <option value="char3">Char 3</option>
-                <option value="char4">Char 4</option>
+            <select name="char" id="ppCharSelect" class="coolbtn" text="Change Value" onchange="charSelClick(this.value)">
+                <option value="" selected disabled hidden>Change Value</option>
+                <option value="1">Char 1</option>
+                <option value="2">Char 2</option>
+                <option value="3">Char 3</option>
+                <option value="4">Char 4</option>
             </select>
         </div>
     </div>
 </div>
+
 <div id="ppTerm">
     <div id="ppTermContainer">
         <input type="text" itemid="ppTermTextInput" id="ppTermTextInput"></>
         <div class="shadeCaster">
-		    <input type="button" Value="Enter" id="ppTermBtn"/>
+		    <input type="button" Value="Enter" id="ppTermBtn" onclick="addUserText()"/>
         </div>
     </div>
+    <div id="ppTermTextWrapper">
     <div id="ppTermText"></div>
-</div>
-<div id="ppIntra">
-    <img id="ppIntraImg"  src="../images/cyber.jpg"/>
-    <div class="shadeCaster">
-        <input type="button" Value="Netcrawl" id="ppIntraBtn"/>
     </div>
-    <div class="propWrapper">
-        <img id="ppPropImg"  src="../images/propaganda.jpg"/>
+</div>
+<div id="ppIntra" class="hideables">
+    <img id="ppIntraImg" class="hideables" src="../images/cyber.jpg"/>
+    <div class="shadeCaster hideables">
+        <input type="button" Value="Netcrawl" class="hideables" id="ppIntraBtn"/>
+    </div>
+    <div class="propWrapper hideables">
+        <div class="shine-wrapper hideables">
+            <img id="ppPropImg" class="hideables" src="../images/propaganda.jpg"/>
+            <div class="shine hideables"></div>
+        </div>
+    </div>
+</div>
+
+<div id="popOverBtn" onclick="popOverFunc()"></div>
+
+<div id="popupProp" class="pop-up">
+    <div id="popCon" class="pop-up" >
+        <button class="pop-up" onclick="popupFunc(this)">x</button>
     </div>
 </div>

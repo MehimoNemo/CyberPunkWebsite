@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
 </head>
 <body>
+    <audio id = "turnOnSound" autoplay>
+      <source src="../images/turnOn.mp3" type="audio/mpeg">
+</audio>
+<audio id = "turnOffSound">
+      <source src="../images/turnOff.mp3" type="audio/mpeg">
+</audio>
+                    <input type="checkbox"  id="CRTswitch" onclick="play()" checked>
+<label for="CRTswitch" class="switch-label">Turn </label>
+	<div class="CRTcontainer">
+        
+        <div class ="screen">
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
@@ -26,6 +37,12 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="PlayerPage">PlayerPage</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="DungeonMasterSuite">DungeonMasterSuite</a>
+                        </li>
+                        <li class="nav-item showables">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Compendium">Compendium</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
@@ -33,11 +50,14 @@
             </div>
         </nav>
     </header>
-    <div class="container"  style="min-height: 100%;">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+    <div class="brickContainer">
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
     </div>
+<div id="butt"></div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
@@ -48,5 +68,8 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    </div>
+    <div class="overlay">AV-1</div>
+    </div>
 </body>
 </html>
