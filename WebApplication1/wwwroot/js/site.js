@@ -5,10 +5,15 @@
 window.addEventListener("load", startup, false);
 
 function startup() { 
-    document.getElementsByClassName("prim")[0].addEventListener("input", colorChoice, false);
-    document.getElementsByClassName("seco")[0].addEventListener("input", colorChoice, false);
-    document.getElementsByClassName("tert")[0].addEventListener("input", colorChoice, false);
-    colorChoice();
+    
+    try {
+        document.getElementsByClassName("prim")[0].addEventListener("input", colorChoice, false);
+        document.getElementsByClassName("seco")[0].addEventListener("input", colorChoice, false);
+        document.getElementsByClassName("tert")[0].addEventListener("input", colorChoice, false);
+        colorChoice();
+    } catch (error) {
+        
+    }
 }
 
 function sleep(ms) {
@@ -75,6 +80,10 @@ function popupFunc(el) {
     el.parentElement.parentElement.classList.add("hidden");
     el.parentElement.classList.add("hidden");
     el.classList.add("hidden");
+}
+
+function fullScreen(el) {
+    el.classList.add("fullScreen");
 }
 
 async function charSelClick(value) {

@@ -2,3 +2,10 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 .vs
+.vs/ProjectEvaluation/webapplication1.metadata.v7.bin
+.vs/ProjectEvaluation/webapplication1.projects.v7.bin
+.vs/WebApplication1/DesignTimeBuild/.dtbcache.v2
+.vs*
+.vs/
+WebApplication1/obj/Debug/net8.0/
+WebApplication1/bin/Debug/net8.0/

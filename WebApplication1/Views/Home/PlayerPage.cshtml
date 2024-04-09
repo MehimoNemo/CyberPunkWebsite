@@ -1,14 +1,14 @@
-﻿
-@{
-    ViewData["Title"] = "View";
+﻿@{
+ViewData["Title"] = "View";
 }
 
-
-<div id="ppChar">
-    <img id="ppCharImg" src="../images/gurps.jpg"/>
-    <div id="ppCharSelectCon">
+<div class="row h-100 gx-5 mx-3">
+<div id = "ppChar" class="ppChar d-flex flex-column col-4 no-wrap">
+    <img class="ppCharImg img-fluid" src="../images/gurps.jpg" />
+    <div class="ppCharSelectCon">
         <div class=shadeCaster>
-            <select name="char" id="ppCharSelect" class="coolbtn" text="Change Value" onchange="charSelClick(this.value)">
+            <select name="char" id="ppCharSelect" class="coolbtn form-select mt-2 text-center align-bottom fs-3" text="Change Value"
+                onchange="charSelClick(this.value)">
                 <option value="" selected disabled hidden>Change Value</option>
                 <option value="1">Char 1</option>
                 <option value="2">Char 2</option>
@@ -19,34 +19,37 @@
     </div>
 </div>
 
-<div id="ppTerm">
-    <div id="ppTermContainer">
-        <input type="text" itemid="ppTermTextInput" id="ppTermTextInput"></>
-        <div class="shadeCaster">
-		    <input type="button" Value="Enter" id="ppTermBtn" onclick="addUserText()"/>
+<div class="ppTerm d-flex flex-column-reverse col-sm-8 col-xl-5 col-12">
+    <div class="ppTermContainer mt-3 d-flex flex-row ">
+        <input type="text"  class= "flex-fill  h-100 fs-m-3" itemid="ppTermTextInput" id="ppTermTextInput"></>
+        <div class="shadeCaster d-flex">
+            <input type="button" Value="Enter" class="m-1 h-100 align-self-center" id="ppTermBtn" onclick="addUserText()" />
         </div>
     </div>
-    <div id="ppTermTextWrapper">
-    <div id="ppTermText"></div>
+    <div class="ppTermTextWrapper flex-fill border border-primary border-top-0 border-bottom-0">
+        <div id="ppTermText" class="flex-fill overflow-y"></div>
     </div>
 </div>
-<div id="ppIntra" class="hideables">
-    <img id="ppIntraImg" class="hideables" src="../images/cyber.jpg"/>
+
+<div class="ppIntra hideables col-xl-3 col-4 d-none d-xl-flex flex-column align-items-center">
+    <img class="ppIntraImg hideables img-fluid" src="../images/cyber.jpg" />
     <div class="shadeCaster hideables">
-        <input type="button" Value="Netcrawl" class="hideables" id="ppIntraBtn"/>
+        <input type="button" Value="Compendium" class="hideables my-4" id="ppIntraBtn" />
     </div>
-    <div class="propWrapper hideables">
+    <div class="propWrapper hideables my-auto">
         <div class="shine-wrapper hideables">
-            <img id="ppPropImg" class="hideables" src="../images/propaganda.jpg"/>
+            <img class="ppPropImg hideables img-fluid" src="../images/propaganda.jpg" />
             <div class="shine hideables"></div>
         </div>
     </div>
 </div>
 
-<div id="popOverBtn" onclick="popOverFunc()"></div>
+</div>
 
-<div id="popupProp" class="pop-up">
-    <div id="popCon" class="pop-up" >
+<div id="popOverBtn" class="" onclick="popOverFunc()"></div>
+
+<div class="popupProp d-none" class="pop-up">
+    <div id="popCon" class="pop-up">
         <button class="pop-up" onclick="popupFunc(this)">x</button>
     </div>
 </div>

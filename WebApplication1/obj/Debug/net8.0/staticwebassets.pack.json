@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\WebApplication1.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\css\\old.css",
+      "PackagePath": "staticwebassets\\css\\old.css"
+    },
+    {
       "Id": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
