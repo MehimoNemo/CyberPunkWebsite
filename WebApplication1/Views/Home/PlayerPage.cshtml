@@ -3,11 +3,11 @@ ViewData["Title"] = "View";
 }
 
 <div class="row h-100 gx-5 mx-3">
-<div id = "ppChar" class="ppChar d-flex flex-column col-4 no-wrap">
-    <img class="ppCharImg img-fluid" src="../images/gurps.jpg" />
+<div id = "ppChar" class="ppChar d-flex flex-column col-md-6 col-xl-4 no-wrap">
+    <img onclick="fullScreen(this)" class="ppCharImg img-fluid" src="../images/gurps.jpg" />
     <div class="ppCharSelectCon">
         <div class=shadeCaster>
-            <select name="char" id="ppCharSelect" class="coolbtn form-select mt-2 text-center align-bottom fs-3" text="Change Value"
+            <select name="char" id="ppCharSelect" class="bg-dark text-info coolbtn form-select mt-2 text-center align-bottom fs-3" text="Change Value"
                 onchange="charSelClick(this.value)">
                 <option value="" selected disabled hidden>Change Value</option>
                 <option value="1">Char 1</option>
@@ -19,14 +19,14 @@ ViewData["Title"] = "View";
     </div>
 </div>
 
-<div class="ppTerm d-flex flex-column-reverse col-sm-8 col-xl-5 col-12">
+<div class="ppTerm d-flex flex-column-reverse col-md-6 col-xl-5 col-12">
     <div class="ppTermContainer mt-3 d-flex flex-row ">
-        <input type="text"  class= "flex-fill  h-100 fs-m-3" itemid="ppTermTextInput" id="ppTermTextInput"></>
+        <input type="text"  class= "bg-dark text-info flex-fill  h-100 fs-m-3" itemid="ppTermTextInput" id="ppTermTextInput"></>
         <div class="shadeCaster d-flex">
-            <input type="button" Value="Enter" class="m-1 h-100 align-self-center" id="ppTermBtn" onclick="addUserText()" />
+            <input type="button" Value="Enter" class="bg-dark text-info m-1 h-100 align-self-center" id="ppTermBtn" onclick="addUserText()" />
         </div>
     </div>
-    <div class="ppTermTextWrapper flex-fill border border-primary border-top-0 border-bottom-0">
+    <div class="ppTermTextWrapper px-2 flex-fill border border-info border-top-0 border-bottom-0">
         <div id="ppTermText" class="flex-fill overflow-y"></div>
     </div>
 </div>
@@ -34,7 +34,7 @@ ViewData["Title"] = "View";
 <div class="ppIntra hideables col-xl-3 col-4 d-none d-xl-flex flex-column align-items-center">
     <img class="ppIntraImg hideables img-fluid" src="../images/cyber.jpg" />
     <div class="shadeCaster hideables">
-        <input type="button" Value="Compendium" class="hideables my-4" id="ppIntraBtn" />
+        <input type="button" Value="Compendium" class="bg-dark text-info hideables my-4" id="ppIntraBtn" />
     </div>
     <div class="propWrapper hideables my-auto">
         <div class="shine-wrapper hideables">

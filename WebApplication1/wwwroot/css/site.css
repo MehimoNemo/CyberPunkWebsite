@@ -11,14 +11,22 @@
 }
 
 .fullScreen{
-        width: 100vw !important;
         position: absolute;
         z-index: 3;
         transition: all 1s;
         padding: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        left: 0;
+        top: 0;    
+        max-height: 90vh;
 }
 
-@media (max-width: 575px) {
+main{
+  max-width: 2220px !important;
+}
+
+@media (max-width: 767px) {
 
     #popOverBtn {
         visibility: visible;
@@ -45,10 +53,10 @@
 
     #ppChar.slide-right{
       height: 100% !important;
-      background-color: #1210107e;
+      background-color: #121010;
     }
     .slide-right {
-        transform: translateX(calc(100vw - 5px));
+        transform: translateX(calc(100vw - 20px));
     }
     #popOverBtn.slide-right{
       opacity: 60%;
@@ -57,6 +65,18 @@
 
   #ppTerm{
     max-height: 66vh !important;
+  }
+
+  .active{
+    color: #007bff !important;
+    border-bottom:#007bff solid 4px !important;
+  }
+  .active > *{
+    color: #007bff !important;
+  }
+
+  html {
+    font-size: 20px;
   }
 
 /*------------------ CRT EFFECT-----------------------*/

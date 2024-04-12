@@ -83,7 +83,10 @@ function popupFunc(el) {
 }
 
 function fullScreen(el) {
-    el.classList.add("fullScreen");
+    if (el.classList.contains("fullScreen"))
+        el.classList.remove("fullScreen");
+    else
+        el.classList.add("fullScreen");
 }
 
 async function charSelClick(value) {
@@ -111,6 +114,8 @@ async function addTerminalText(string) {
     var term = document.getElementById("ppTermText");
     const para = document.createElement("p");
     para.classList.add("terminalText");
+    para.classList.add("text-info");
+    para.classList.add("m-0");
     term.appendChild(para);
     var delay = Math.min(2000 / text.length, 30);
     for (let i = 0; i < text.length; i++) {
