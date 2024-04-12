@@ -26,6 +26,18 @@ main{
   max-width: 2220px !important;
 }
 
+.rounded-custom {
+    border-radius: 1rem !important;
+}
+
+.square {
+    aspect-ratio: 1 / 1;
+    height: 65%;
+    margin: 15px;
+    background-color: darkgrey;
+    margin-right: 15px;
+}
+
 @media (max-width: 767px) {
 
     #popOverBtn {
