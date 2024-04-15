@@ -37,6 +37,18 @@ main{
     background-color: darkgrey;
     margin-right: 15px;
 }
+.colorInput{
+  height: 75px;
+  width: 75px;
+}
+
+.input-custom{
+  width: calc(100% - 85px);
+}
+
+.dmsuite body{
+  height:fit-content !important;
+}
 
 @media (max-width: 767px) {
 
