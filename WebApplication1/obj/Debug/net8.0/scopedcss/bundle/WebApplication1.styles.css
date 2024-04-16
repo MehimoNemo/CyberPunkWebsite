@@ -1,3 +1,7 @@
 @import '_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css';
 
 /* _content/WebApplication1/Views/Shared/_Layout.cshtml.rz.scp.css */
+
+html[b-bddmc6yalx]{
+  min-height: 100%;
+}
