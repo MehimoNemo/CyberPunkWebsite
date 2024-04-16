@@ -65,11 +65,13 @@ function populateFakeData(){
 }
 
 function insertItem(img, name, desc) {
-    var item =  "<div class = \"comp-item\">"+ 
-                    "<img src = \""+img+"\" >"+
-                    "<div class=\"item-text\">"+
-                        "<h2>"+name+"</h2>"+
-                        "<p>"+desc+"</p>"+
+    var item = "<div class=\"col-12 col-sm-6 col-md-4 col-lg-3 mb-2\">" +
+                    "<div class = \"comp-item border\">" + 
+                        "<img class=\"w-100\" src = \""+img+"\" >"+
+                        "<div class=\"item-text text-light p-1\">"+
+                            "<h2>"+name+"</h2>"+
+                            "<p>"+desc+"</p>"+
+                        "</div>" +
                     "</div>" +
                 "</div >";
     var box = document.getElementsByClassName("comp-scroll-box").item(0);

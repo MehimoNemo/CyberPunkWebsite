@@ -13,36 +13,33 @@ ViewData["Title"] = "View";
 </head>
 
 <body class="comp">
-    <div class="d-flex row gx-3">
-        <div class="propWrapper hideables col-2">
+    <div class="d-flex row gx-3 justify-content-center">
+        <div class="propWrapper hideables overflow-hidden d-none d-sm-block col-2">
             <div class="shine-wrapper hideables">
                 <img id="ppPropImg" class="hideables" src="https://fakeimg.pl/512/" />
                 <div class="shine hideables"></div>
             </div>
         </div>
 
-        <div class="cWrapper col-8 d-flex flex-column align-items-center py-3">
-            <h1 style="letter-spacing: 0.5em;">COMPENDIU<span style="letter-spacing:0;">M</span></h1>
+        <div class="cWrapper col-11 mx-sm-auto col-sm-8 d-flex flex-column align-items-center py-3">
+            <h1 class="text-light d-none d-sm-block" style="letter-spacing: s0.5em;">COMPENDIU<span style="letter-spacing:0;">M</span></h1>
+            <h1 class="text-light h5 d-sm-none" style="letter-spacing: 0.4em;">COMPENDIU<span style="letter-spacing:0;">M</span></h1>
             <!--^^^^Grosssssssss-->
-            <div class="form-outline" data-mdb-input-init>
-    <input type="search" id="form1" class="form-control" />
-    <label class="form-label" for="form1">Search</label>
-  </div>
-  <button type="button" class="btn btn-primary" data-mdb-ripple-init>
-    <i class="fas fa-search"></i>
-  </button>
-            <div class="search-wrapper">
-                <input type="text" placeholder="Search.." id="comp-search">
-                <button type="submit" onclick="populateFakeData()"><i class="fa fa-search"></i></button>
+            <div class="search-wrapper col-lg-8 d-flex justify-content-center pb-2">
+                <input type="text" placeholder="Search.." class="form-input form-control input-lg" id="comp-search">
+                <button type="submit" onclick="populateFakeData()" class="btn-square-md ratio-1x1"><i
+                        class="fa fa-search"></i></button>
             </div>
-            
-            <div class="overflow-scroll comp-scroll-box border-light border w-100 p-3">
+
+            <div class="overflow-scroll comp-scroll-box border-light border w-100 p-3 row">
                 <!--DELETE THIS LATER-->
-                <div class="comp-item">
-                    <img src="https://fakeimg.pl/512/">
-                    <div class="item-text">
-                        <h2>Website Name</h2>
-                        <p>Description</p>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
+                    <div class="comp-item border">
+                        <img class="w-100" src="https://fakeimg.pl/512/">
+                        <div class="item-text text-light p-1">
+                            <h2>Website Name</h2>
+                            <p>Description</p>
+                        </div>
                     </div>
                 </div>
 
@@ -50,7 +47,7 @@ ViewData["Title"] = "View";
             </div>
         </div>
 
-        <div class="propWrapper hideables col-2">
+        <div class="propWrapper hideables d-none d-sm-block col-2">
             <img id="ppPropImg" class="hideables" src="https://fakeimg.pl/300/" />
             <img id="ppPropImg" class="hideables" src="https://fakeimg.pl/300/" />
         </div>
