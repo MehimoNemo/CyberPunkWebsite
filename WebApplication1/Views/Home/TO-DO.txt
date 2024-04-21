@@ -1,0 +1,10 @@
+A Home page with a Showcase section that highlights the most important thing people, your customers, should know when they visit your website. 
+Try to use real texts in this section and not just the generic Lorem Ipsum text.
+
+Add Bootstrap Icons (Use the CDN to download them).
+
+A Bootstrap Accordion.
+
+Add some Social Media icons anywhere on the website.
+
+Make use of the http://randomuser.me API to obtain and display a sample user image.

@@ -65,7 +65,7 @@ function populateFakeData(){
 }
 
 function insertItem(img, name, desc) {
-    var item = "<div class=\"col-12 col-sm-6 col-md-4 col-lg-3 mb-2\">" +
+    /*  var item = "<div class=\"col-12 col-sm-6 col-md-4 col-lg-3 mb-2\">" +
                     "<div class = \"comp-item border\">" + 
                         "<img class=\"w-100\" src = \""+img+"\" >"+
                         "<div class=\"item-text text-light p-1\">"+
@@ -73,7 +73,17 @@ function insertItem(img, name, desc) {
                             "<p>"+desc+"</p>"+
                         "</div>" +
                     "</div>" +
-                "</div >";
+        "</div >";
+    */
+    
+    var item = "<div class=\"card col-12 col-sm-6 col-md-4 col-lg-3 mb-2 bg-transparent\" >" +
+                    "<img class=\"card-img-top\" src=\"https://fakeimg.pl/512/\" alt=\"Card image cap\">" +
+                    "<div class=\"card-body comp-item border item-text text-light p-1\">" +
+                        "<h5 class=\"card-title\">Website Name</h5>" +
+                        "<p class=\"card-text\">Description</p>" +
+                   " </div>"+
+                "</div>";
+    
     var box = document.getElementsByClassName("comp-scroll-box").item(0);
     box.innerHTML = box.innerHTML + item;
 }
