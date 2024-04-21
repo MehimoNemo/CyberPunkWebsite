@@ -9,5 +9,6 @@
 .vs/
 WebApplication1/obj/Debug/net8.0/
 WebApplication1/bin/Debug/net8.0/
+WebApplication1/obj/Debug/net8.0/project.razor.vscode.bin
 WebApplication1/bin/Debug/net8.0/WebApplication1.dll
 WebApplication1/bin/Debug/net8.0/WebApplication1.exe
