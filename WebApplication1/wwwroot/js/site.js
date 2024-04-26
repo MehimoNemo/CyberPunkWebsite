@@ -2,17 +2,117 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+
+
+
+
+
+
+
+
 window.addEventListener("load", startup, false);
 
-function startup() { 
-    
+function startup() {
+
     try {
         document.getElementsByClassName("prim")[0].addEventListener("input", colorChoice, false);
         document.getElementsByClassName("seco")[0].addEventListener("input", colorChoice, false);
         document.getElementsByClassName("tert")[0].addEventListener("input", colorChoice, false);
         colorChoice();
+
+
     } catch (error) {
-        
+
+    }
+}
+
+
+
+
+let interrupt = false;
+async function showtime() {
+    console.log("showtime");
+    if (!interrupt) {
+
+        let h;
+        let p;
+        let cube;
+        let OStxt;
+        let GCAT;
+        try {
+            h = document.getElementById("gcath");
+            p = document.getElementById("gcatp");
+            cube = document.getElementsByClassName("cube")[0];
+            OStxt = document.getElementsByClassName("OStxt")[0];
+            GCAT = document.getElementsByClassName("GCAT")[0];
+            resetShowcase(h, p, cube, OStxt, GCAT);
+        } catch (error) {
+            console.log(error);
+        }
+        try {
+            await sleep(1000);
+            OStxt.classList.remove("opacity-0");
+            OStxt.classList.add("custom-xl");
+            OStxt.classList.remove("h5");
+            await sleep(5000);
+            OStxt.classList.remove("custom-xl");
+            OStxt.classList.add("h5");
+            OStxt.classList.add("opacity-0");
+            cube.classList.remove("bigCube");
+            cube.classList.add("smallCube");
+            GCAT.classList.remove("w-0");
+            await sleep(1000);
+            await showcaseTyper();
+            interrupt = true;
+            console.log(interrupt);
+        }
+        catch (error) {
+            console.log(error);
+        }
+    }
+}
+
+function resetShowcase(h, p, cube, OStxt, GCAT) {
+    try {
+        h.innerHTML = "";
+        p.innerHTML = "";
+    } catch (error) {
+        console.log(error);
+    }
+    cube.classList.add("reset");
+    GCAT.classList.add("reset");
+    OStxt.classList.add("reset");
+    cube.classList.add("bigCube");
+    cube.classList.remove("smallCube");
+    GCAT.classList.add("w-0");
+    cube.classList.remove("reset");
+    GCAT.classList.remove("reset");
+    OStxt.classList.remove("reset");
+}
+
+async function showcaseTyper() {
+    h = document.getElementById("gcath");
+    p = document.getElementById("gcatp");
+    let hText = "GURPS Cyberpunk Adventure Tools";
+    let pText = "G-CAT"
+
+
+    for (let i = 0; i < hText.length; i++) {
+        if (interrupt) {
+            console.log(interrupt);
+            return;
+        }
+        h.innerHTML += hText[i];
+        await sleep(80);
+    }
+    await sleep(200);
+    for (let i = 0; i < pText.length; i++) {
+        if (interrupt) {
+            console.log(interrupt);
+            return;
+        }
+        p.innerHTML += pText[i];
+        await sleep(120);
     }
 }
 
@@ -21,6 +121,17 @@ function sleep(ms) {
 }
 
 function play() {
+    try {
+        let elements = document.getElementsByClassName("GCAT");
+        if (elements.length > 0) {
+            if (document.getElementById("CRTswitch").checked) {
+                window.location.href = window.location.href;
+            }
+        }
+    }
+    catch (e) {
+        console.error(e);
+    }
     var turnOn = document.getElementById("turnOnSound");
     var turnOff = document.getElementById("turnOffSound");
     var swit = document.getElementById("CRTswitch");
@@ -58,7 +169,7 @@ function colorChoice() {
     document.getElementById("tcol").value = colSqrTert;
 }
 
-function populateFakeData(){
+function populateFakeData() {
     for (var i = 0; i < 20; i++) {
         insertItem("https://fakeimg.pl/512/", "Website Name", "Description");
     }
@@ -75,15 +186,15 @@ function insertItem(img, name, desc) {
                     "</div>" +
         "</div >";
     */
-    
+
     var item = "<div class=\"card col-12 col-sm-6 col-md-4 col-lg-3 mb-2 bg-transparent\" >" +
-                    "<img class=\"card-img-top\" src=\"https://fakeimg.pl/512/\" alt=\"Card image cap\">" +
-                    "<div class=\"card-body comp-item border item-text text-light p-1\">" +
-                        "<h5 class=\"card-title\">Website Name</h5>" +
-                        "<p class=\"card-text\">Description</p>" +
-                   " </div>"+
-                "</div>";
-    
+        "<img class=\"card-img-top\" src=\"https://fakeimg.pl/512/\" alt=\"Card image cap\">" +
+        "<div class=\"card-body comp-item border item-text text-light p-1\">" +
+        "<h5 class=\"card-title\">Website Name</h5>" +
+        "<p class=\"card-text\">Description</p>" +
+        " </div>" +
+        "</div>";
+
     var box = document.getElementsByClassName("comp-scroll-box").item(0);
     box.innerHTML = box.innerHTML + item;
 }
@@ -134,7 +245,7 @@ async function addTerminalText(string) {
         await sleep(delay);
         para.textContent += text[i].toString();
     }
-term.scrollTo(0, term.scrollHeight);
+    term.scrollTo(0, term.scrollHeight);
 }
 
 

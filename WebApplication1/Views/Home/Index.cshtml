@@ -8,14 +8,167 @@ ViewData["Title"] = "Home Page";
 <head>
     <meta charset="utf-8" />
     <title>GURPS Client</title>
+    <script type="importmap">
+        {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@v0.163.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.163.0/examples/jsm/"
+    }
+  }
+</script>
 </head>
 
-<body class="colorTest">
+<body class="colorTest" onload="showtime()">
+
+    <!--Header Section-->
+    <section>
+        <div class="container d-flex justify-content-center align-items-center text-center" >
+            <div class="cube ratio ratio-1x1 position-relative flex-shrink-0 bigCube">
+                <div class="container d-flex position-absolute" style="top: 50%;">
+                    <h1 class="OStxt mx-auto text-info h5 opacity-0" style="text-shadow:
+                5px 5px 0 #0d0d0d,
+                -5px 5px 0 #0d0d0d,
+                -5px -5px 0 #0d0d0d, 
+                5px -5px 0 #0d0d0d;">DomeOS</h1>
+                </div>
+            </div>
+            <div class="GCAT container w-0">
+                <h1 id="gcath" class="text-info h3"></h1>
+                <p id="gcatp" class="text-info"></p>
+            </div>
+        </div>
+    </section>
+
+    <!--Showcase Section-->
+    <section class="bg-dark">
+        <div class="bg-dark m-3 p-3">
+            <h3 class="text-info">Showcase</h3>
+            <div class="accordion accordion-flush bg-dark text-info" id="accordionFlushExample">
+                <div class="accordion-item bg-dark text-info">
+                    <h2 class="accordion-header bg-dark text-info" id="flush-headingOne">
+                        <button class="accordion-button collapsed bg-dark text-info" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            Player Page
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse bg-dark text-info"
+                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+
+                        <!--First Body-->
+                        <div class="accordion-body bg-dark text-info d-flex row flex-column flex-lg-row">
+                            <div class="col-12 col-lg-8">
+                                <img src="\images\PlayerPage_Expo.png" alt="" class="img-fluid">
+                            </div>
+                            <p class="col-12 col-lg-4">
+                                The player page is a place for players to get immersed, access their character sheets,
+                                and navigate towards the
+                                <code>Compendium</code>. It features a slide-over effect at narrower screen sizes for
+                                enchanced reactivity,
+                                and a click to fullscreen feature. The terminal automatically fills itself with relevant
+                                text as though you were typing.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-dark text-info">
+                        <h2 class="accordion-header bg-dark text-info" id="flush-headingTwo">
+                            <button class="accordion-button collapsed bg-dark text-info" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Dungeon Master Suite
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse bg-dark text-info"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+
+                            <!--Second Body-->
+                            <div class="accordion-body bg-dark text-info d-flex row flex-column flex-lg-row">
+                                <div class="col-12 col-lg-8">
+                                    <img src="\images\DungeonMasterSuiteExpo.png" alt="" class="img-fluid">
+                                </div>
+                                <p class="col-12 col-lg-4">
+                                    A place for less experienced website designers to quickly generate a template
+                                    website for the in game universe.
+                                    Features a form, a website preview option, and(eventually) a place to edit the
+                                    website more specifically.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-dark text-info">
+                        <h2 class="accordion-header bg-dark text-info" id="flush-headingThree">
+                            <button class="accordion-button collapsed bg-dark text-info" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Compendium
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse bg-dark text-info"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+
+                            <!--Third Body-->
+                            <div class="accordion-body bg-dark text-info d-flex row flex-column flex-lg-row">
+                                <div class="col-12 col-lg-8">
+                                    <img src="\images\CompendiumExpo.png" alt="" class="img-fluid">
+                                </div>
+                                <p class="col-12 col-lg-4">
+                                    An immersive way for players to browse the in-universe websites, the
+                                    <code>Compendium</code>
+                                    features an array of cards with thumbnails and short descriptions. These will
+                                    eventually pull from a database of available websites.
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-dark text-info">
+                            <h2 class="accordion-header bg-dark text-info" id="flush-headingFour">
+                                <button class="accordion-button collapsed bg-dark text-info" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    Showcase Page
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse bg-dark text-info"
+                                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+
+                                <!--Fourth Body-->
+                                <div class="accordion-body bg-dark text-info d-flex row">
+                                    This current page will eventually not be the home page. It features a modal contact
+                                    form, an accordion, bootstrap icons, social media icons,
+                                    and a button that procures the image of a stranger from the random face API. 
+                                    I also added some three.js for flavor/fun.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </section>
 
     <!-- Modal trigger button -->
-    <button type="button" class="btn btn-primary btn-lg btn-dark border border-info text-info" data-bs-toggle="modal" data-bs-target="#modalId">
+    <button type="button" class="btn btn-primary btn-lg btn-dark border border-info text-info" data-bs-toggle="modal"
+        data-bs-target="#modalId">
         Contact Me
     </button>
+
+    <button type="button" class="btn btn-dark text-info border-info border btn-lg" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+        See The Face Of The Man
+    </button>
+
+    <!-- Face Modal -->
+    <div class="modal fade over" id="exampleModal" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <!-- Add image inside the body of modal -->
+                <div class="modal-body">
+                    <img class="img-fluid w-100" id="image" src="https://randomuser.me/api/portraits/men/21.jpg" alt="Click on button" />
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Modal Body -->
     <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
@@ -27,7 +180,8 @@ ViewData["Title"] = "Home Page";
                     <h5 class="modal-title" id="modalTitleId">
                         Contact Form
                     </h5>
-                    <button type="button" class="btn-close text-info" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close text-info" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form class="">
@@ -47,12 +201,14 @@ ViewData["Title"] = "Home Page";
                         <!-- textarea input -->
                         <div data-mdb-input-init class="form-outline mb-4">
                             <label class="form-label" for="textarea4">Your message</label>
-                            <textarea id="textarea4" rows="4" class="form-control bg-dark text-info border-info"></textarea>
+                            <textarea id="textarea4" rows="4"
+                                class="form-control bg-dark text-info border-info"></textarea>
                         </div>
 
                         <!-- Checkbox -->
                         <div class="form-check d-flex justify-content-center mb-4">
-                            <input class="form-check-input me-2 bg-dark text-info border-info" type="checkbox" value="" id="checkbox4" checked />
+                            <input class="form-check-input me-2 bg-dark text-info border-info" type="checkbox" value=""
+                                id="checkbox4" checked />
                             <label class="form-check-label" for="checkbox4">
                                 Send me a copy of this message
                             </label>
@@ -67,7 +223,7 @@ ViewData["Title"] = "Home Page";
                         Close
                     </button>
                     <button type="submit" data-mdb-button-init data-mdb-ripple-init
-                        class="btn btn-primary btn-block">Send</button>
+                        class="btn btn-info btn-block">Send</button>
                 </div>
             </div>
         </div>
@@ -81,23 +237,8 @@ ViewData["Title"] = "Home Page";
         );
     </script>
 
-    <h1>Color Test</h1>
-    <div class="container d-flex">
-        <div>
-            <h1>Normal</h1>
-            <img class="img-fluid w-100" src="../images/colortest1.jpeg" />
-            <img class="img-fluid w-100" src="../images/colortest2.jpeg" />
-            <img class="img-fluid w-100" src="../images/colortest3.jpeg" />
-            <img class="img-fluid w-100" src="../images/colortest4.jpeg" />
-        </div>
-        <div class="cAdjust">
-            <h1>Adjusted</h1>
-            <img class="img-fluid w-100" src="../images/colortest1.jpeg" />
-            <img class="img-fluid w-100" src="../images/colortest2.jpeg" />
-            <img class="img-fluid w-100" src="../images/colortest3.jpeg" />
-            <img class="img-fluid w-100" src="../images/colortest4.jpeg" />
-        </div>
-    </div>
+    <script type="module" src="~/js/threeMain.js"></script>
+
 </body>
 
 </html>
