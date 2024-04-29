@@ -1,6 +1,13 @@
+
+
+.cursor{
+  display: none;
+}
+
+
 .cAdjust {
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 200;
+    z-index: 20000;
     filter: brightness(115%) contrast(90%) saturate(100%) hue-rotate(-25deg);
 }
 
