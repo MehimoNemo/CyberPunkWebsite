@@ -6,16 +6,16 @@ const cubeDiv = document.getElementsByClassName("cube").item(0);
 const cubeParent = document.parent
 
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, cubeDiv.clientWidth / cubeDiv.clientHeight, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(70, cubeDiv.clientWidth / cubeDiv.clientHeight, 0.1, 1000);
 
-const renderer = new THREE.WebGLRenderer({alpha:true});
+const renderer = new THREE.WebGLRenderer({ alpha: true });
 renderer.setSize(cubeDiv.clientWidth, cubeDiv.clientHeight);
 
 cubeDiv.appendChild(renderer.domElement);
 
-const geom = new THREE.SphereGeometry(3, 8, 3, 0, Math.PI*2, 0, Math.PI/2);
+const geom = new THREE.SphereGeometry(3, 8, 3, 0, Math.PI * 2, 0, Math.PI / 2);
 
-setGeom(geom, 0x0dcaf0 , 0, 0, 0);
+setGeom(geom, 0x0dcaf0, 0, 0, 0);
 
 
 renderer.setAnimationLoop(() => {
@@ -58,22 +58,22 @@ function ToQuads(g) {
 }
 camera.position.z = 5;
 camera.position.y = 2;
-camera.lookAt(0,0,0)
+camera.lookAt(0, 0.4, 0)
 
 let isRotating = true;
 let reverseRotationChance = 0.002; // Chance of reversing rotation
 
 renderer.setAnimationLoop(() => {
-    if (isRotating) {
-        let shouldReverse = Math.random() < reverseRotationChance;
+  if (isRotating) {
+    let shouldReverse = Math.random() < reverseRotationChance;
 
-      if (shouldReverse) {
-            geom.rotateY(-0.03 * Math.random()); // Reverse rotation
-        } else {
-            geom.rotateY(0.003); // Normal rotation
-        }
+    if (shouldReverse) {
+      geom.rotateY(-0.03 * Math.random()); // Reverse rotation
+    } else {
+      geom.rotateY(0.003); // Normal rotation
     }
-    
-    renderer.setSize(cubeDiv.clientWidth, cubeDiv.clientHeight);
-    renderer.render(scene, camera);
+  }
+
+  renderer.setSize(cubeDiv.clientWidth, cubeDiv.clientHeight);
+  renderer.render(scene, camera);
 });

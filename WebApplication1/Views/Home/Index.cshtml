@@ -23,10 +23,10 @@ ViewData["Title"] = "Home Page";
 <body class="colorTest" onload="showtime()">
 
     <!--Header Section-->
-    <section>
-        <div class="container d-flex justify-content-center align-items-center text-center" >
-            <div class="cube ratio ratio-1x1 position-relative flex-shrink-0 bigCube">
-                <div class="container d-flex position-absolute" style="top: 50%;">
+    <section class="">
+        <div class="d-flex justify-content-center align-items-center text-center position-static" >
+            <div class="cube ratio ratio-1x1 position-relative flex-shrink-0 bigCube" style="margin: -3% 0;">
+                <div class="container d-flex position-absolute" style="top: 50%; min-width: 100%;">
                     <h1 class="OStxt mx-auto text-info h5 opacity-0" style="text-shadow:
                 5px 5px 0 #0d0d0d,
                 -5px 5px 0 #0d0d0d,
@@ -142,12 +142,12 @@ ViewData["Title"] = "Home Page";
     </section>
 
     <!-- Modal trigger button -->
-    <button type="button" class="btn btn-primary btn-lg btn-dark border border-info text-info" data-bs-toggle="modal"
+    <button type="button" class="btn btn-primary btn-lg btn-dark border border-info text-info ms-4" data-bs-toggle="modal"
         data-bs-target="#modalId">
         Contact Me
     </button>
 
-    <button type="button" class="btn btn-dark text-info border-info border btn-lg" data-bs-toggle="modal"
+    <button type="button" class="btn btn-dark text-info border-info border btn-lg ms-4" data-bs-toggle="modal"
         data-bs-target="#exampleModal">
         See The Face Of The Man
     </button>
@@ -220,6 +220,7 @@ ViewData["Title"] = "Home Page";
 
                     </form>
                 </div>
+                
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                         Close

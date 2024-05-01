@@ -7,7 +7,7 @@ ViewData["Title"] = "View";
     <img onclick="fullScreen(this)" class="ppCharImg img-fluid" src="../images/gurps.jpg" />
     <div class="ppCharSelectCon">
         <div class=shadeCaster>
-            <select name="char" id="ppCharSelect" class="bg-dark text-info coolbtn form-select mt-2 text-center align-bottom fs-3" text="Change Value"
+            <select name="char" id="ppCharSelect" class="bg-dark border border-info text-info coolbtn form-select mt-2 text-center align-bottom fs-3" text="Change Value"
                 onchange="charSelClick(this.value)">
                 <option value="" selected disabled hidden>Change Value</option>
                 <option value="1">Char 1</option>
@@ -24,7 +24,7 @@ ViewData["Title"] = "View";
     <div class="ppTermContainer mt-3 d-flex flex-row ">
         <input type="text"  class= "bg-dark text-info flex-fill  h-100 fs-m-3" itemid="ppTermTextInput" id="ppTermTextInput"></>
         <div class="shadeCaster d-flex">
-            <input type="button" Value="Enter" class="bg-dark text-info m-1 h-100 align-self-center" id="ppTermBtn" onclick="addUserText()" />
+            <input type="button" Value="Enter" class="btn btn-primary btn-dark border border-info text-info m-1 h-100 align-self-center" id="ppTermBtn" onclick="addUserText()" />
         </div>
     </div>
     <div class="ppTermTextWrapper px-2 flex-fill border border-info border-top-0 border-bottom-0">
@@ -35,7 +35,7 @@ ViewData["Title"] = "View";
 <div class="ppIntra hideables col-xl-3 col-4 d-none d-xl-flex flex-column align-items-center">
     <img class="ppIntraImg hideables img-fluid" src="../images/cyber.jpg" />
     <div class="shadeCaster hideables">
-        <input type="button" Value="Compendium" class="bg-dark text-info hideables my-4" id="ppIntraBtn" />
+        <input type="button" Value="Compendium" class="btn btn-primary btn-lg btn-dark border border-info text-info hideables my-4" id="ppIntraBtn" />
     </div>
     <div class="propWrapper hideables my-auto">
         <div class="shine-wrapper hideables">

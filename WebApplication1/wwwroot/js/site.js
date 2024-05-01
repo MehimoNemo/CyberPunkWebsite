@@ -54,7 +54,7 @@ async function showtime() {
             OStxt.classList.remove("opacity-0");
             OStxt.classList.add("custom-xl");
             OStxt.classList.remove("h5");
-            await sleep(5000);
+            await sleep(500000);
             OStxt.classList.remove("custom-xl");
             OStxt.classList.add("h5");
             OStxt.classList.add("opacity-0");
