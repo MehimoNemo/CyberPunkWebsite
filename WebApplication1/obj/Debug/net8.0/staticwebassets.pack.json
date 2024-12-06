@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\WebApplication1.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\css\\infocursor.css",
+      "PackagePath": "staticwebassets\\css\\infocursor.css"
+    },
+    {
       "Id": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\css\\old.css",
       "PackagePath": "staticwebassets\\css\\old.css"
     },
@@ -15,6 +19,18 @@
     {
       "Id": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\CompendiumExpo.png",
+      "PackagePath": "staticwebassets\\images\\CompendiumExpo.png"
+    },
+    {
+      "Id": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\DungeonMasterSuiteExpo.png",
+      "PackagePath": "staticwebassets\\images\\DungeonMasterSuiteExpo.png"
+    },
+    {
+      "Id": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\PlayerPage_Expo.png",
+      "PackagePath": "staticwebassets\\images\\PlayerPage_Expo.png"
     },
     {
       "Id": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\colortest1.jpeg",
@@ -57,8 +73,16 @@
       "PackagePath": "staticwebassets\\images\\turnOn.mp3"
     },
     {
+      "Id": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\js\\mouse.js",
+      "PackagePath": "staticwebassets\\js\\mouse.js"
+    },
+    {
       "Id": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\js\\threeMain.js",
+      "PackagePath": "staticwebassets\\js\\threeMain.js"
     },
     {
       "Id": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\LICENSE",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wr90NWdyEco4WILH2+5/zRPFglkeDAq8cqu76c7F9g8=",
+  "Hash": "k5xPxkf/PpcdZDKKk7Y0ihQCkjiFfTHHSjIVTHobNL0=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebApplication1.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\css\\infocursor.css",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "css/infocursor.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\infocursor.css"
     },
     {
       "Identity": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\css\\old.css",
@@ -226,6 +245,25 @@
       "OriginalItemSpec": "wwwroot\\images\\colortest4.jpeg"
     },
     {
+      "Identity": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\CompendiumExpo.png",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/CompendiumExpo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\CompendiumExpo.png"
+    },
+    {
       "Identity": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\cyber.jpg",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
@@ -245,6 +283,25 @@
       "OriginalItemSpec": "wwwroot\\images\\cyber.jpg"
     },
     {
+      "Identity": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\DungeonMasterSuiteExpo.png",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/DungeonMasterSuiteExpo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\DungeonMasterSuiteExpo.png"
+    },
+    {
       "Identity": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\gurps.jpg",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
@@ -262,6 +319,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\gurps.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\PlayerPage_Expo.png",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/PlayerPage_Expo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\PlayerPage_Expo.png"
     },
     {
       "Identity": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\propaganda.jpg",
@@ -340,6 +416,25 @@
       "OriginalItemSpec": "wwwroot\\images\\turnOn.mp3"
     },
     {
+      "Identity": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\js\\mouse.js",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "js/mouse.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\mouse.js"
+    },
+    {
       "Identity": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\js\\site.js",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
@@ -357,6 +452,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\js\\threeMain.js",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "js/threeMain.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\threeMain.js"
     },
     {
       "Identity": "C:\\Users\\Izek\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
