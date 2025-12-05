@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewData["Title"] = "View";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width" />
+    <title>Compendium</title>
+</head>
+<body class="comp">
+    <div class="propWrapper hideables">
+        <div class="shine-wrapper hideables">
+            <img id="ppPropImg" class="hideables" src="https://fakeimg.pl/512/"/>
+            <div class="shine hideables"></div>
+        </div>
+    </div>
+
+    <div class="cWrapper">
+        <h1>COMPENDIU<span style="letter-spacing:0;">M</span></h1>
+        <!--^^^^Grosssssssss-->
+        <div class="search-wrapper">
+            <input type="text" placeholder="Search.." id="comp-search">
+            <button type="submit" onclick="populateFakeData()"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="overflow-wrapper comp-scroll-box">
+            <!--DELETE THIS LATER-->
+            <div class = "comp-item"> 
+                <img src="https://fakeimg.pl/512/">
+                <div class="item-text">
+                    <h2>Website Name</h2>
+                    <p>Description</p>
+                </div>
+            </div>
+           
+
+            <!--END OF CONTENT-->
+        </div>
+    </div>
+
+    <div class="propWrapper hideables halfw">
+        <img id="ppPropImg" class="hideables" src="https://fakeimg.pl/300/"/>
+        <img id="ppPropImg" class="hideables" src="https://fakeimg.pl/300/"/>
+    </div>
+</body>
+</html>
